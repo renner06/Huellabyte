@@ -98,6 +98,8 @@ h1 {
 
 .tarjeta img {
     width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
 .tarjeta h3 {
