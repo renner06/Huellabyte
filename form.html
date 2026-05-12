@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuellaByte - Solicitud de adopción</title>
+    <link rel="stylesheet" href="huellabyte.css">
+    <script src="huellabyte.js"></script>
+</head>
+
+<body>
+
+    <div id="bloque1">
+        <h1>HuellaByte</h1>
+    </div>
+    <img id="logo" src="imagenes/WhatsApp Image 2026-05-10 at 19.51.01.png" alt="160px" width="160px">
+
+    <div id="div-formulario">
+        <h2>Solicitud de adopción</h2>
+        <p>Completá todos los campos para enviar tu solicitud.</p>
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre"><br><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido"><br><br>
+
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" min="18"><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="text" id="telefono"><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo"><br><br>
+
+        <label for="direccion">Dirección:</label><br>
+        <input type="text" id="direccion"><br><br>
+
+        <label for="vivienda">Tipo de vivienda:</label><br>
+        <select id="vivienda">
+            <option value="">-- Seleccioná una opción --</option>
+            <option value="casa">Casa con patio</option>
+            <option value="casa-sin-patio">Casa sin patio</option>
+            <option value="departamento">Departamento</option>
+        </select><br><br>
+
+        <label for="mascotas">¿Tenés otras mascotas?</label><br>
+        <select id="mascotas">
+            <option value="">-- Seleccioná una opción --</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="acuerdo">¿Todos en la casa están de acuerdo con la adopción?</label><br>
+        <select id="acuerdo">
+            <option value="">-- Seleccioná una opción --</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="tiempo-sola">¿Cuánto tiempo estaría sola la mascota por día?</label><br>
+        <select id="tiempo-sola">
+            <option value="">-- Seleccioná una opción --</option>
+            <option value="menos2">Menos de 2 horas</option>
+            <option value="2a4">Entre 2 y 4 horas</option>
+            <option value="4a8">Entre 4 y 8 horas</option>
+            <option value="mas8">Más de 8 horas</option>
+        </select><br><br>
+
+        <label for="veterinario">¿Podés afrontar gastos veterinarios?</label><br>
+        <select id="veterinario">
+            <option value="">-- Seleccioná una opción --</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="motivo">Motivo de adopción:</label><br>
+        <textarea id="motivo" rows="4" cols="50" placeholder="Contanos por qué querés adoptar..."></textarea><br><br>
+
+        <label for="compromiso">Compromiso de cuidado y no abandono:</label><br>
+        <textarea id="compromiso" rows="4" cols="50" placeholder="Contanos cómo vas a cuidar a la mascota..."></textarea><br><br>
+
+        <button onclick="enviarSolicitud()">Enviar solicitud</button>
+
+        
+        <p id="error-formulario"></p>
+        <p id="exito-formulario"></p>
+
+    </div>
+</body>
+</html>
